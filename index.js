@@ -24,7 +24,7 @@ function driversByName(drivers){
   });
 }
 
-function callback = function(agg, el, i, array){
+const callback = function(agg, el, i, array){
   return agg + el.revenue;
 };
 function totalRevenue(drivers) {
