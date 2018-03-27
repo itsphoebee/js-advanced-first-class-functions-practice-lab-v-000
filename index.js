@@ -26,6 +26,7 @@ const driversByName = function(drivers){
 
 const callback = function(agg, el, i, array){
   return agg + el.revenue;
+  console.log(agg + el.revenue);
 };
 const totalRevenue = function(drivers) {
   return drivers.reduce(callback, 0);
