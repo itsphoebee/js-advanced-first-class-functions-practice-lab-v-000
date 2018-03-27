@@ -31,6 +31,6 @@ const totalRevenue = function(drivers) {
   return drivers.reduce(callback, 0);
 };
 
-const averageRevenue = function(drivers){
+function averageRevenue(drivers){
   return totalRevenue(drivers) / (drivers.length);
 };
