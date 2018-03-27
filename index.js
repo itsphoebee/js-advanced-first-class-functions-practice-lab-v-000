@@ -18,7 +18,7 @@ function driversByRevenue(drivers) {
   });
 };
 
-const driversByName = function(drivers){
+function driversByName(drivers){
   return drivers.slice().sort(function(a,b){
     return a.name.localeCompare(b.name);
   });
