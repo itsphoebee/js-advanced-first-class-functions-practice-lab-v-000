@@ -1,11 +1,11 @@
 // Code your solution in this file!
-const logDriverNames = function(drivers) {
+function logDriverNames(drivers) {
   drivers.forEach(function(driver) {
     console.log(driver.name);
   });
 };
 
-const logDriversByHometown = function(drivers, location) {
+function logDriversByHometown(drivers, location) {
   drivers.forEach(function(driver) {
     if (driver.hometown === location)
       console.log(driver.name);
@@ -25,11 +25,6 @@ const driversByName = function(drivers){
 }
 
 const callback = function(agg, el, i, array){
-  console.log('The aggregate up to this point is:', agg);
-console.log("The current element's name is:", el.name);
-console.log('The index of the current element is:', i);
-console.log('----------------');
-console.log(agg + el.revenue);
   return agg + el.revenue;
 };
 const totalRevenue = function(drivers) {
