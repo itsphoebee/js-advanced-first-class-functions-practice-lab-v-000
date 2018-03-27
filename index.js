@@ -24,8 +24,8 @@ function driversByName(drivers){
   });
 }
 
-function callback(agg, el, i, array){
-  return agg + el.revenue;
+function callback(total, currentDriver){
+  return currentDriver.revenue + total;
 };
 function totalRevenue(drivers) {
   return drivers.reduce(callback, 0);
