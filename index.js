@@ -25,6 +25,10 @@ const driversByName = function(drivers){
 }
 
 const callback = function(agg, el, i, array){
+  console.log('The aggregate up to this point is:', agg);
+console.log("The current element's name is:", el.name);
+console.log('The index of the current element is:', i);
+console.log('----------------');
   return agg + el.revenue;
 };
 const totalRevenue = function(drivers) {
