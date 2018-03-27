@@ -27,7 +27,7 @@ function driversByName(drivers){
 function totalRevenue(drivers) {
   return drivers.reduce(function(agg, el, i, drivers){
     return agg + el.revenue;
-  }), 0);
+  }), 0;
 };
 
 function averageRevenue(drivers){
