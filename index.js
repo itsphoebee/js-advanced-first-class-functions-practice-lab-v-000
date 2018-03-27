@@ -29,7 +29,7 @@ const callback = function(agg, el, i, array){
 console.log("The current element's name is:", el.name);
 console.log('The index of the current element is:', i);
 console.log('----------------');
-console.log(agg + el.revenue);
+console.log(el.revenue);
   return agg + el.revenue;
 };
 const totalRevenue = function(drivers) {
