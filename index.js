@@ -24,9 +24,10 @@ function driversByName(drivers){
   });
 }
 
+
 function totalRevenue(drivers) {
   function add(a,b) {
-    return a + b;
+    return a.revenue + b.revenue;
   }
   return drivers.reduce(add, 0);
 };
