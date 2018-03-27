@@ -24,10 +24,11 @@ function driversByName(drivers){
   });
 }
 
+function callback = function(agg, el, i, array){
+  return agg + el.revenue;
+};
 function totalRevenue(drivers) {
-  return drivers.reduce(function(agg, el, i, drivers){
-    return agg + el.revenue;
-  }), 0;
+  return drivers.reduce(callback, 0);
 };
 
 function averageRevenue(drivers){
