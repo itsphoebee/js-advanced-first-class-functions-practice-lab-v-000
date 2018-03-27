@@ -31,7 +31,9 @@ console.log('The index of the current element is:', i);
 console.log('----------------');
   return agg + el.revenue;
 };
-
+const totalRevenue = function(drivers) {
+  return drivers.reduce(callback, 0);
+};
 
 const averageRevenue = function(drivers){
   return totalRevenue(drivers)/(drivers.length);
